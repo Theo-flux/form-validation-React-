@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --DBlue: hsl(249, 10%, 26%);
+  --GBlue: hsl(246, 25%, 77%);
+  --shadow: 0 5px 0px #4c4e4e40;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(images/bg-intro-mobile.png);
+  background-color: var(--Red);
+  color: #fff;
+  font-size: 1rem;
+}
+
+
+@media screen and (min-width:740px)  {
+  body{
+    font-size: 1.325rem;
+    background-image: url(images/bg-intro-desktop.png);
+  }
 }
